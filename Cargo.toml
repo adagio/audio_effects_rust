@@ -1,0 +1,19 @@
+[package]
+name = "audio_effects_player"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+resolver = "2"
+[dependencies]
+eframe = "0.26.0"  # egui framework
+rodio = "0.17.3"   # audio playback
+dasp = { version = "0.11.0", features = ["signal"] }  # DSP operations
+minimp3 = "0.5.1"  # MP3 decoding
+crossbeam = "0.8.4"  # threading utilities
+anyhow = "1.0.79"  # error handling
+thiserror = "1.0.56"  # error definitions
+ringbuf = "0.3.3"  # ring buffer for audio samples
+parking_lot = "0.12.1"  # synchronization primitives
+winapi = { version = "0.3.9", features = ["winuser"] }
+rfd = "0.12"  # file dialog
